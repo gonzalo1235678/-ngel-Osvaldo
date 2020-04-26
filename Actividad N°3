@@ -1,0 +1,68 @@
+/*
+ ejercicio 3 - Programa que muestra numeros enteros dentro de un rango
+ */
+
+package enteros_2;
+import java.util.Scanner;
+
+
+public class Enteros_2 {
+
+    Scanner teclado = new Scanner(System.in); //cree un objeto llamado teclado de la clase Scanner
+    
+    int inicio, fin,x,y; // declaro dos variables
+    
+    
+    
+    // cree un metodo publico llamado entradadatos()
+            public void entradaDatos(){
+        // dentro del metodo utilizo la clase System y dentro de ella el metodo printLn
+            // asi imprimo un mensaje por consola
+            System.out.println(" ingrese los valores de rango");// imprimo por pantalla
+            System.out.print("Ingrese el numero inicial :  ");
+            inicio = teclado.nextInt();
+            //el valor que se va a capturar por teclado(que es el objeto) se va a guardar dentro de una 
+            // variable llamada inicio
+            
+            
+            System.out.print("ingrese el valor final :  ");
+            fin = teclado.nextInt();
+            // lo mismo  que el anterior capturo el valor ingresado por teclado
+            // lo guardo en la variable fin
+            
+        }
+       // creo un metodo publico llamado proceso , donde se realizara lo    ue realmente se requiere
+       // mostrar los nuemros enteros dentro de un rango, con un bucle for
+       // lo inicializao con el valor inicio que ingreso el usuario la cual se guarda dentro de 
+       // la variable x
+        public void proceso_1(){
+             
+            for (int x = inicio; x<=fin; x++){
+            System.out.println(x);// se imprime por pantalla la x , que son los numeros requeridos.
+            }
+            
+           
+        } 
+        
+         public void proceso_2(){
+            for ( int x = fin ;   x<=inicio; x++){
+                System.out.println(x);
+            
+            }
+         }
+        
+        
+              
+    // en el metodo main(principal)se llama a los metodos entradaDatos y proceso
+    public static void main(String[] args) {
+        
+        Enteros_2 num = new Enteros_2();
+        num.entradaDatos();
+        num.proceso_1();
+        num.proceso_2();
+        
+        
+        // TODO code application logic here
+    }
+    
+}
