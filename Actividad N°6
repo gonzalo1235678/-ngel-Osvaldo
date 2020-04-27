@@ -1,33 +1,69 @@
 /**
  EJERCICIO N°6
  */
-package actividad6;
+
+package ejercicio_6;
+
 import java.util.Scanner;
 
-/**
- * @author gonza
- *
- */
+public class Ejercicio_6 {
 
-public class Actividad5 {
-	
-	public static void main(String[] args) {
-		
-		Scanner teclado=new Scanner(System.in);
-		
-		System.out.println("Ingrese el primer numero:");
-		   int num1 = teclado.nextInt();
-		   
-		System.out.println("Ingrese el segundo numero:");
-		   int num2 = teclado.nextInt();
-		
-		   int resta = num1 - num2;
-		   
-	    System.out.println("El numero ingresado a continuación sera quitado :");
-		   int multi= teclado.nextInt();
-		
-	         if (multi >resta) {
-	        	 System.out.println("Error el número ingresado es mayor :");
-	         }
-
+    
+    
+    public static void main(String[] args) {
+        
+        Scanner teclado = new Scanner(System.in);
+        
+        System.out.println("ingrese el Primer numero : ");
+        int num1 = teclado.nextInt();
+        
+        System.out.println("Ingrese el segundo numero :");
+        int num2 = teclado.nextInt();
+        
+        
+        int resta = num1-num2;
+        
+        System.out.println("el numero ingresado a continuacion sera quitado : ");
+        int multi = teclado.nextInt();
+        
+        
+            if( multi > resta ){
+                
+                System.out.println(" Error el numero ingresado es mayor ");
+                
+                 return;
+                        
+            }
+            else
+           
+            System.out.println(" numero correcto : ");
+            
+            
+            
+        
+        
+           
+        int numx = 0;
+            if( num1 > num2){
+                numx = num1;
+                num1 = num2;
+                num2 = numx;
+            
+            
+            }
+        System.out.println("El resultdo del problema : ");
+        
+                     
+            for ( int i=num1; i<= num2; i++){
+            
+                if( i%multi!=0){
+                    
+                    System.out.println(i);
+                
+                }
+            
+            }
+    
+    }
+    
 }
