@@ -1,10 +1,14 @@
 /*
- ejercicio 4 - programa que muestra numeros enteros dentro de un rango
+ EJERCICIO N°4
  */
 
 package MultiploDeCinco;
 import java.util.Scanner;
 
+/**
+ * @author gonza
+ *
+ */
 
 public class MultiploDeCinco {
 
