@@ -5,6 +5,10 @@
 package enteros_2;
 import java.util.Scanner;
 
+/**
+ * @author gonza
+ *
+ */
 
 public class Enteros_2 {
 
