@@ -1,0 +1,77 @@
+/*
+EJERCICIO N°9
+ */
+
+package contarvocales;
+import java.util.Scanner;
+
+/**
+ * @author gonza
+ *
+ */
+ 
+public class ContarVocales {
+
+  
+    String cadena;
+    
+    
+            public void entradaDatos(){
+            
+        // dentro del metodo utilizo la clase System y dentro de ella el metodo printLn
+            // asi imprimo un mensaje por consola
+            Scanner teclado = new Scanner(System.in);
+            System.out.print(" Ingrese la palabra :"); // imprimo por pantalla
+         
+            cadena  = teclado.nextLine();
+            
+            
+            int conteoa=0 ,conteoe=0 ,conteoi=0 , conteoo=0 , conteou=0;
+            
+            for(int i =0; i<cadena.length(); i++){
+                
+                if( cadena.charAt(i)== 'a'){
+                    
+                    conteoa++;
+                     
+                }if( cadena.charAt(i)== 'e'){
+                    
+                    conteoe++;
+                     
+                }if( cadena.charAt(i)== 'i'){
+                    
+                    conteoi++;
+                     
+                }if( cadena.charAt(i)== 'o'){
+                    
+                    conteoo++;
+                     
+                }if( cadena.charAt(i)== 'u'){
+                    
+                    conteou++;
+                     
+                }
+            
+            }
+            System.out.println(" vocal a-->"+conteoa);
+            System.out.println(" vocal e-->"+conteoe);
+            System.out.println(" vocal i-->"+conteoi);
+            System.out.println(" vocal o-->"+conteoo);
+            System.out.println(" vocal u-->"+conteou);
+            
+            
+            
+            }
+         
+    
+    
+    public static void main(String[] args) {
+        
+        ContarVocales vocal = new ContarVocales();
+        vocal.entradaDatos();
+     
+             
+    }
+    
+    
+}
