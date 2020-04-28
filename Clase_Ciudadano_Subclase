@@ -1,0 +1,57 @@
+/*
+ Clase Ciudadano (subclase de Persona): 
+Atributos: 
+provincia tipo String 
+dni tipo long 
+(ambos encapsulados) 
+ */
+
+package clases_subclases;
+
+/**
+ Cree una clase hija, que proviene de la Clase_Persona, con la palabra reservada extends, que significa 
+ * herencia
+ */
+
+public class Clase_Ciudadano extends Clases_Persona {
+    
+    private String provincia;
+    private long dni; //declaramos una variable de tipo long, para que me de mas lugares para el DNI
+    
+    // constructor
+    public void Clase_Ciudadano (String provincia ,long dni ){
+    
+                this.provincia = provincia;
+                this.dni = dni;
+                           
+    }
+    
+     // metodos para escribir , setters
+     public void setProvincia (String provincia){
+     
+            this.provincia = provincia;
+     }
+     
+      public String getProvincia(){
+        return this.provincia;
+    
+    
+    }
+      
+      public void setDni(long dni){
+            this.dni = dni;
+      }
+      
+       public long getDni(){
+        return this.dni;
+    
+    
+    }
+          
+      }
+      
+      
+
+    
+    
+
