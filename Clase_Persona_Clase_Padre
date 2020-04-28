@@ -1,0 +1,84 @@
+/*
+ Clase Persona: 
+Atributos: 
+apellido tipo String 
+nombre tipo String 
+(ambos encapsulados) 
+Métodos: 
+setters 
+getter
+
+
+
+Métodos: 
+setters 
+getters 
+ */
+
+package clases_subclases;
+
+
+
+public class Clases_Persona {
+
+    /**
+     declare dos variables de tipo String, encapsuladas(private)
+     */
+     private String nombre;
+     private String apellido;
+     
+     
+     
+     
+     
+     // constructores
+     /*Un constructor es un metodo de una clase que se llama siempre que se declara un objeto de esa
+     clase(se lo llama con el this) .Su funcion es inizilizar el objeto y eso permite que los objetos tengan 
+     valores validos.*/
+     
+     public void Clase_Personas(String nombre, String apellido){
+         
+         this.nombre = nombre;
+         this.apellido = apellido;
+     
+     
+     }
+
+     
+    /*declare dos metodos setter, para escribir , ya que sin ellos no podre acceder a los datos
+    porque el nombre y apellido son atributos privados
+    y el metodo gettter , para obtener los datos escritos*/
+     
+     
+     public String getNombre(){
+        return this.nombre;
+    
+    
+    }    
+    public void setNombre( String nombre){
+    
+             this.nombre = nombre;
+    }
+   
+    public void setApellido( String apellido){
+             this.apellido = apellido;
+    
+    }
+    
+    
+ /* Metodo get para obtener lo que se escribio, de tipo String, ya que es un apellido*/   
+    public String getApellido(){
+     /*lo retornamos al objeto apellido*/
+          return this.apellido;
+    
+    }
+
+    
+    
+}
+    
+    
+    
+    
+    
+
