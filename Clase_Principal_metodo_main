@@ -1,0 +1,54 @@
+/*
+Esta es la clase principal, el metodo main, sin ella no se ejecutara el programa.
+
+ */
+
+package clases_subclases;
+
+/**
+ *
+ * @author Gonza
+ */
+
+
+public class ClasePrincipal {
+   
+    
+    public static void main(String[] args){
+/*creamos el objeto persona asi con el accedemos a los metodos set y get y poder asi
+        imprimirlos por pantalla, sin ellos no se podria ver lo que se tiene, porque son de tipo privado
+        nombre, apellido, provincia y DNI*/    
+    
+    Clases_Persona persona = new Clases_Persona();
+    
+      persona.setNombre("Gonzalo");
+      persona.setApellido("Brito");
+        
+    
+    System.out.println( " El nombre es          :  "+persona.getNombre());
+    System.out.println( " El Apellido es        :  "+persona.getApellido());
+    
+    
+    
+    
+    
+        
+    Clase_Ciudadano ciudadano = new Clase_Ciudadano();
+    
+        ciudadano.setProvincia("Mendoza");
+        ciudadano.setDni(42.863.230);
+       
+       /*se imprime por pantalla accediendo al objeto ciudadano por medio del punto  y de alli al metodo
+        get y asi poder ver lo que se escribio. */ 
+        System.out.println(" La provincia es     :  "+ciudadano.getProvincia());
+        System.out.println(" Su DNI ES           :  "+ciudadano.getDni());
+           
+    }
+    
+
+    
+    
+    
+    
+    
+}
